@@ -256,7 +256,7 @@ Una vez hayamos ejecutado mysql ya podemos crear la base de datos que nuestra ap
 
 
 ```mysql
-$ CREATE DATABASE equipo;
+$ CREATE DATABASE plantel;
 
 
 
@@ -269,22 +269,23 @@ Ahora creemos nuestra tabla para guardar los datos de los jugadores
 
 
  ```bash
- $ use equipo
+ $ use plantel
  Database changed
  ```
 
+```
+ $ CREATE TABLE IF NOT EXISTS "jugador" (
+  "id" int(5) NOT NULL AUTO_INCREMENT,
+  "nombre" varchar(255) NOT NULL,
+  "apellido" varchar(255) NOT NULL,
+  "posicion" varchar(255) NOT NULL,
+  "numero" int(11) NOT NULL,
+  "imagen" varchar(255) NOT NULL,
+  "usuario" varchar(20) NOT NULL,
+  PRIMARY KEY ("id")
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
- $ CREATE TABLE IF NOT EXISTS `jugador` (
-  `id` int(5) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(255) NOT NULL,
-  `apellido` varchar(255) NOT NULL,
-  `posicion` varchar(255) NOT NULL,
-  `numero` int(11) NOT NULL,
-  `imagen` varchar(255) NOT NULL,
-  `usuario` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
-
+```
 
 
 
