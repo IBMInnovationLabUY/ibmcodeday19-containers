@@ -56,7 +56,7 @@ Al instalar la CLI de IBM Cloud, también se le instalará GIT por lo tanto pode
 
 
 ```
-$ git clone https://github.com/jpanizza/containers-codeday.git
+$ git clone https://github.com/IBMInnovationLabUY/containers-code-day.git
 ```
 
 
